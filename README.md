@@ -1,12 +1,12 @@
-taskcli
+TaskCLI
 =======
 
 a lightweight command-line to-do list app
 
-[![oclif](https://img.shields.io/badge/cli-oclif-brightgreen.svg)](https://oclif.io)
-[![Version](https://img.shields.io/npm/v/taskcli.svg)](https://npmjs.org/package/taskcli)
-[![Downloads/week](https://img.shields.io/npm/dw/taskcli.svg)](https://npmjs.org/package/taskcli)
-[![License](https://img.shields.io/npm/l/taskcli.svg)](https://github.com/gddavidson99/taskcli/blob/master/package.json)
+<!-- [![oclif](https://img.shields.io/badge/cli-oclif-brightgreen.svg)](https://oclif.io) -->
+<!-- [![Version](https://img.shields.io/npm/v/taskcli.svg)](https://npmjs.org/package/taskcli) -->
+<!-- ![Downloads/week](https://img.shields.io/npm/dw/taskcli.svg)](https://npmjs.org/package/taskcli) -->
+<!-- [![License](https://img.shields.io/npm/l/taskcli.svg)](https://github.com/gddavidson99/taskcli/blob/master/package.json) -->
 
 <!-- toc -->
 * [Usage](#usage)
@@ -29,27 +29,63 @@ USAGE
 # Commands
 <!-- commands -->
 * [`taskcli add [NEW TASK]`](#taskcli-add-file)
-* [`taskcli help [COMMAND]`](#taskcli-help-command)
+* [`taskcli remove [INDEX]`](#taskcli-remove-command)
 
-## `taskcli hello [FILE]`
+## `taskcli add [NEW TASK]`
 
-describe the command here
+add a task
 
 ```
 USAGE
-  $ taskcli hello [FILE]
-
-OPTIONS
-  -f, --force
-  -h, --help       show CLI help
-  -n, --name=name  name to print
+  $ taskcli add [NEW TASK]
 
 EXAMPLE
-  $ taskcli hello
-  hello world from ./src/hello.ts!
+  $ taskcli add "Learn to code"
 ```
 
-_See code: [src/commands/hello.ts](https://github.com/gddavidson99/taskcli/blob/v0.0.0/src/commands/hello.ts)_
+_See code: [src/commands/hello.ts](https://github.com/gddavidson99/taskcli/blob/v0.0.0/src/commands/add.ts)_
+
+## `taskcli do [INDEX]`
+
+complete a task
+
+```
+USAGE
+  $ taskcli do [INDEX]
+
+EXAMPLE
+  $ taskcli do 0
+```
+
+_See code: [src/commands/hello.ts](https://github.com/gddavidson99/taskcli/blob/v0.0.0/src/commands/do.ts)_
+
+## `taskcli undo [INDEX]`
+
+uncomplete a task
+
+```
+USAGE
+  $ taskcli undo [INDEX]
+
+EXAMPLE
+  $ taskcli undo 0
+```
+
+_See code: [src/commands/hello.ts](https://github.com/gddavidson99/taskcli/blob/v0.0.0/src/commands/undo.ts)_
+
+## `taskcli remove [INDEX]`
+
+remove a task
+
+```
+USAGE
+  $ taskcli remove [INDEX]
+
+EXAMPLE
+  $ taskcli remove 0
+```
+
+_See code: [src/commands/hello.ts](https://github.com/gddavidson99/taskcli/blob/v0.0.0/src/commands/undo.ts)_
 
 ## `taskcli help [COMMAND]`
 
