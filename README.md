@@ -1,7 +1,7 @@
 taskcli
 =======
 
-a lightweight command-line to-do list system
+a lightweight command-line to-do list app
 
 [![oclif](https://img.shields.io/badge/cli-oclif-brightgreen.svg)](https://oclif.io)
 [![Version](https://img.shields.io/npm/v/taskcli.svg)](https://npmjs.org/package/taskcli)
@@ -28,7 +28,7 @@ USAGE
 <!-- usagestop -->
 # Commands
 <!-- commands -->
-* [`taskcli hello [FILE]`](#taskcli-hello-file)
+* [`taskcli add [NEW TASK]`](#taskcli-add-file)
 * [`taskcli help [COMMAND]`](#taskcli-help-command)
 
 ## `taskcli hello [FILE]`

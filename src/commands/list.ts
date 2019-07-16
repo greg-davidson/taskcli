@@ -23,6 +23,10 @@ export default class List extends Command {
       table.push([ i, task.description, status ])
     }
 
-    this.log(table.toString())
+    if (tasks.length == 0) {
+      this.log("There are no tasks in your list right now.")
+    } else {
+      this.log(table.toString())
+    }
   }
 }

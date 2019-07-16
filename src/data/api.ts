@@ -32,6 +32,26 @@ class API {
     this.save()
   }
 
+  remove(index: number) {
+    if (index < this.tasks.length) {
+      this.tasks.splice(index, 1)
+      this.save()
+      return true
+    }
+
+    return false
+  }
+
+  do(index: number) {
+    this.tasks[index].done = true
+    this.save()
+  }
+
+  undo(index: number) {
+    this.tasks[index].done = false
+    this.save()
+  }
+
   list() {
     return this.tasks
   }

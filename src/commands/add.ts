@@ -9,8 +9,6 @@ export default class Add extends Command {
     { name: 'description' }
   ]
 
-  tasks = []
-
   async run() {
     const {args} = this.parse(Add)
     const task = args.description
