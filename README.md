@@ -28,11 +28,11 @@ USAGE
 <!-- usagestop -->
 # Commands
 <!-- commands -->
-* [`taskcli add [NEW TASK]`](#taskcli-add-command)
-* [`taskcli remove [INDEX]`](#taskcli-remove-command)
-* [`taskcli do [INDEX]`](#taskcli-do-command)
-* [`taskcli undo [INDEX]`](#taskcli-undo-command)
-* [`taskcli list`](#taskcli-undo-command)
+* [`taskcli add [NEW TASK]`](#taskcli-add-new-task)
+* [`taskcli remove [INDEX]`](#taskcli-remove-index)
+* [`taskcli do [INDEX]`](#taskcli-do-index)
+* [`taskcli undo [INDEX]`](#taskcli-undo-index)
+* [`taskcli list`](#taskcli-list)
 
 ## `taskcli add [NEW TASK]`
 
