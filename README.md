@@ -88,7 +88,18 @@ EXAMPLE
   $ taskcli remove 0
 ```
 
-_See code: [src/commands/hello.ts](https://github.com/gddavidson99/taskcli/blob/v0.0.0/src/commands/undo.ts)_
+_See code: [src/commands/hello.ts](https://github.com/gddavidson99/taskcli/blob/v0.0.0/src/commands/remove.ts)_
+
+## `taskcli list`
+
+list all tasks
+
+```
+USAGE
+  $ taskcli list
+```
+
+_See code: [src/commands/hello.ts](https://github.com/gddavidson99/taskcli/blob/v0.0.0/src/commands/list.ts)_
 
 ## `taskcli help [COMMAND]`
 
