@@ -1,17 +1,6 @@
 import chalk from 'chalk'
 
 class Messages {
-<<<<<<< HEAD
-
-  getAddMessageSuccess(task: string) {
-    return `${chalk.green('[Success]')} "${task}" has been added to the list`
-  }
-
-  getAddMessagesFailure(task: string) {
-    return `${chalk.red('[Error]')} please provide a task to add`
-  }
-
-=======
   private error = `${chalk.red('[ERROR]')}`
   private success = `${chalk.green('[SUCCESS]')}`
 
@@ -66,8 +55,7 @@ class Messages {
      getNoTasksInListMessage() {
        return "There are no tasks in your list right now"
      }
-
->>>>>>> develop-greg
+     
 }
 
 const messages = new Messages
