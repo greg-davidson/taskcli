@@ -1,6 +1,7 @@
 import { Command, flags } from '@oclif/command'
 import chalk from 'chalk'
 import api from '../data/api'
+import messages from '../data/messages'
 
 export default class Add extends Command {
   static description = 'add a task'
@@ -15,9 +16,9 @@ export default class Add extends Command {
 
     if (task) {
       api.add(task)
-      this.log(`${chalk.green('[Success]')} has been added to the list`)
+      this.log(messages.getAddMessageSuccess(task))
     } else {
-      this.error(`${chalk.red('please ')}`)
+      this.log(messages.getAddMessagesFailure())
     }
   }
 }
