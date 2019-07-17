@@ -1,6 +1,7 @@
 import { Command, flags } from '@oclif/command'
 import chalk from 'chalk'
 import api from '../data/api'
+import messages from '../data/messages'
 
 export default class Remove extends Command {
   static description = 'remove a task'
@@ -14,13 +15,14 @@ export default class Remove extends Command {
     const index = args.index
 
     if (index) {
-      if (api.remove(index)) {
-        this.log(`${chalk.green('[Success]')} has been deleted from the list`)
+      const taskDescription = api.remove(index)
+      if (taskDescription) {
+        this.log(messages.getRemoveMessageSuccess(taskDescription))
       } else {
-        this.error(`${chalk.red('index out of bounds')}`)
+        this.log(messages.getIndexOutOfBoundsError())
       }
     } else {
-      this.error(`${chalk.red('please enter index')}`)
+      this.error(messages.getNoIndexError())
     }
   }
 }

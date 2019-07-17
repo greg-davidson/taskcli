@@ -1,6 +1,7 @@
 import { Command, flags } from '@oclif/command'
 import chalk from 'chalk'
 import api from '../data/api'
+import messages from '../data/messages'
 const Table = require('cli-table')
 
 export default class List extends Command {
@@ -24,7 +25,7 @@ export default class List extends Command {
     }
 
     if (tasks.length == 0) {
-      this.log("There are no tasks in your list right now.")
+      this.log(messages.getNoTasksInListMessage())
     } else {
       this.log(table.toString())
     }

@@ -1,6 +1,7 @@
 import { Command, flags } from '@oclif/command'
 import chalk from 'chalk'
 import api from '../data/api'
+import messages from '../data/messages'
 
 export default class Undo extends Command {
   static description = 'uncomplete a task'
@@ -14,10 +15,10 @@ export default class Undo extends Command {
     const index = args.index
 
     if (index) {
-      api.undo(index)
-      this.log(`${chalk.green('[Success]')} task uncompleted`)
+      const taskDescription = api.undo(index)
+      this.log(messages.getUndoMessageSuccess(taskDescription))
     } else {
-      this.error(`${chalk.red('please enter index')}`)
+      this.error(messages.getNoIndexError())
     }
   }
 }
