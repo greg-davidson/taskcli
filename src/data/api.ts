@@ -5,6 +5,7 @@ import * as os from 'os'
 interface Task {
   description: string
   done: boolean
+  children?: Task[]
 }
 
 const dataFile = path.join(os.homedir(), 'taskcli', 'tasks.json')
@@ -27,8 +28,14 @@ class API {
   }
 
   add(desc: string) {
-    const task: Task = { description: desc, done: false }
+    const task: Task = { description: desc, done: false, children: [] }
     this.tasks.push(task)
+    this.save()
+  }
+
+  addSubtask(desc: string, index: number) {
+    const task: Task = { description: desc, done: false, children: [] }
+    this.tasks[index].children.push(task)
     this.save()
   }
 

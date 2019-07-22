@@ -1,6 +1,6 @@
 {
   "name": "taskcli",
-  "description": "a lightweight command-line to-do list system",
+  "description": "a lightweight command-line to-do list app",
   "version": "0.0.0",
   "author": "Greg Davidson @gddavidson99",
   "bin": {
@@ -11,6 +11,7 @@
     "@oclif/command": "^1.5.16",
     "@oclif/config": "^1.13.2",
     "@oclif/plugin-help": "^2.2.0",
+    "ansi-strikethrough": "^0.1.1",
     "chalk": "^2.4.2",
     "cli-table": "^0.3.1",
     "tslib": "^1.10.0"

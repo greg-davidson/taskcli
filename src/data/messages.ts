@@ -9,11 +9,11 @@ class Messages {
    */
 
    getNoIndexError() {
-     return `${this.error} please enter index`
+     return `\n${this.error} please enter index\n`
    }
 
    getIndexOutOfBoundsError() {
-     return `${this.error} index out of bounds`
+     return `\n${this.error} index out of bounds\n`
    }
 
   /*
@@ -21,11 +21,11 @@ class Messages {
    */
 
   getAddMessageSuccess(task: string) {
-    return `${this.success} "${task}" has been added to the list`
+    return `\n${this.success} "${task}" has been added to the list\n`
   }
 
   getAddMessagesFailure() {
-    return `${this.error} please provide a task to add`
+    return `\n${this.error} please provide a task to add\n`
   }
 
   /*
@@ -33,7 +33,7 @@ class Messages {
    */
 
    getRemoveMessageSuccess(task: string) {
-     return `${this.success} "${task}" has been deleted from the list`
+     return `\n${this.success} "${task}" has been deleted from the list\n`
    }
 
    /*
@@ -41,11 +41,11 @@ class Messages {
     */
 
     getDoMessageSuccess(task: string) {
-      return `${this.success} "${task}" completed`
+      return `\n${this.success} "${task}" completed\n`
     }
 
     getUndoMessageSuccess(task: string) {
-      return `${this.success} "${task}" uncompleted`
+      return `\n${this.success} "${task}" uncompleted\n`
     }
 
     /*
@@ -53,9 +53,9 @@ class Messages {
      */
 
      getNoTasksInListMessage() {
-       return "There are no tasks in your list right now"
+       return "\nThere are no tasks in your list right now\n"
      }
-     
+
 }
 
 const messages = new Messages
